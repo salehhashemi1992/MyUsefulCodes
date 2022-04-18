@@ -1,6 +1,6 @@
 <?php
 
-class Point
+class OldPoint
 {
     public int $x;
     public int $y;
@@ -18,7 +18,7 @@ class Point
     }
 }
 
-class NewPoint
+class PHP8Point
 {
     public function __construct(
         public int $x = 0,
@@ -28,3 +28,6 @@ class NewPoint
     {
     }
 }
+
+$obj = new PHP8Point();
+$test = $obj->x;
