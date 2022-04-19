@@ -137,6 +137,8 @@ class Radio implements Device {
 
 $radio = new Radio();
 $remote = new RemoteControl($radio);
+$remote->volumeDown();
 
 $tv = new Tv();
 $remote = new AdvancedRemote($tv);
+$remote->mute();
